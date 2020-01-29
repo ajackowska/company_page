@@ -1,0 +1,109 @@
+<!-- dleczego w linku do style,css i script.js sa ' zamiast ""' -->
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='style.css'>
+        <title>My Company</title>
+
+    </head>
+
+    <body>
+        <header>
+
+            <nav>
+                <ul>
+                    <li>
+                        <div>
+                            <a href='#home'>MyCompany</a>
+                        </div>
+                        <div class="burger">
+                            <div></div>
+                        </div>
+                    </li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <main>
+            <script src='script.js'></script>
+            <article id="home">
+                <section>
+                    <span>MyCompany</span> <!-- czemu span a nie p?  -->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <p>
+                        Check out our <a href ='#pricing'>pricing!</a>
+                    </p>
+            </article>
+            <article id='pricing'>
+                <section>
+                    <div class='col'>
+                        <p>Free</p>
+                        <ul>
+                            <li>1 client</li>
+                            <li>5 calls</li>
+                            <li>
+                                <span>Free</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col", class="center">
+                        <p>Business</p>
+                        <ul>
+                            <li>5 clients</li>
+                            <li>50 calls</li>
+                            <li>
+                                <span>10$ / month</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p>Enterprice</p>
+                        <ul>
+                            <li>unlimited*</li>
+                            <li>unlimited*</li>
+                            <li>
+                                <span>100$ / month</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+            <article id='about'>
+                <section>
+                    <span>About us</span>
+                    <div class="people">
+                        <img src="https://media.licdn.com/dms/image/C4D03AQGdIlUv9G7dsQ/profile-displayphoto-shrink_200_200/0?e=1582156800&v=beta&t=hVGpo1sAUjLdH27c4yRKF6OmDH7g0YFIJhr9CmUfkaM">
+                        <img src="https://media.licdn.com/dms/image/C4D03AQGdIlUv9G7dsQ/profile-displayphoto-shrink_200_200/0?e=1582156800&v=beta&t=hVGpo1sAUjLdH27c4yRKF6OmDH7g0YFIJhr9CmUfkaM">
+                        <img src="https://media.licdn.com/dms/image/C4D03AQGdIlUv9G7dsQ/profile-displayphoto-shrink_200_200/0?e=1582156800&v=beta&t=hVGpo1sAUjLdH27c4yRKF6OmDH7g0YFIJhr9CmUfkaM">
+                        
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a
+                        type specimen book. It has survived not only five
+                        centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged.
+                    </p>
+                </section>
+            </article>
+        </main>
+
+
+    </body>
+
+
+
+</html>
+

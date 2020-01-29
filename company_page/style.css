@@ -1,0 +1,211 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+/* NAVIGATION */
+
+nav {
+    position: fixed;
+    width: 100vw;
+}
+
+nav ul {
+    margin: 0rem;
+    padding: 0rem;
+    background: #424242;
+}
+
+nav ul li {
+    list-style: none;    /* bez numeracji: */
+    display: inline-block;
+}
+
+nav ul li :hover {
+    background-color: #545454;
+}
+
+nav ul li :first-child :hover {
+    background-color: #424242;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+article  {
+    display: block;
+}
+
+
+section {
+    width: 100vw;
+    height: 100vh;
+    color: #424242;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* HOME */
+
+article#home span{
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 3px;
+}
+
+article#home a {
+    color: lightseagreen;
+    text-decoration: none;
+}
+
+/* PRICING */
+
+article#pricing {
+    background-color: #fafafa;
+}
+
+.col {
+    display: inline-block;
+    width: 33%;
+}
+
+.col ul {
+    padding: 0;
+
+}
+
+.col ul li {
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.3 rem;
+}
+
+.col p {
+   font-size: 1.6rem; 
+   font-weight: bold;
+   border-bottom: 5px solid #424242;
+   margin: 0 3rem;
+   padding: 1rem;
+}
+
+.col span {
+    font-size: 2rem;
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+/* ABOUT */
+
+article#about {
+    background-color: #ebebeb;
+}
+
+article#about span {
+    font-size: 3rem;
+    border-bottom: 0.5rem solid #424242;
+}
+
+.people {
+    margin: 2rem 0;
+}
+
+.people img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%; 
+    margin: 1rem;
+    border: 2px solid #fff ;
+}
+
+article#about section p {
+    text-align: justify;
+    padding: 0 5rem;
+}
+
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    /* NAVBAR */
+    
+    nav ul li {
+        display: none;
+    }
+
+    nav ul.open li {
+        display: block;
+    }
+
+    nav ul li:first-child {
+        display: block;
+        border-bottom: 1px solid #fff;
+    }
+
+    nav ul li:first-child > div {
+        display: inline-block;
+        width: 49%;
+    }
+
+    nav ul li:first-child(2) > div {
+        text-align: right;
+    }
+
+    .burger {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 25px;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        margin-right: 10px;
+    }
+    .burger > div {
+        margin: 5px 0;
+        border-bottom: 2px solid #fff;
+    }
+
+    /* ALL */
+
+    article section {
+        padding: 1.5rem 0;
+    }
+
+    /* PRICING */
+
+    .col {
+        display: block;
+        width: 100%;
+    }
+
+    .col p {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .col ul li {
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .col span {
+        font-size: 1.5rem;
+    }
+}
+    /* ABOUT */
+    .people img {
+        width: 5rem;
+        height: 5rem;
+        margin: 0.5rem;
+    }
+
+    article#about p{
+        padding: 0 1rem;
+    }
